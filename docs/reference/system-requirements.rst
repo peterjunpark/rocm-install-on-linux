@@ -93,6 +93,9 @@ AMD ROCm™ Software supports the following Linux distributions.
     "Ubuntu 22.04.3", "5.15 [GA], 6.2 [HWE]", "✅"
     "Ubuntu 20.04.6", "5.15 [HWE]", "✅"
     "Ubuntu 20.04.5", "5.15 [HWE]", "✅"
+    "Oracle 8.9", "5.15.0-205.149.5.1.el8uek.x86_64", "✅ :sup:`3`"
+
+:sup:`3` Oracle Linux 8.9 is only supported on AMD Instinct MI300X.
 
 Virtualization support
 =============================================
