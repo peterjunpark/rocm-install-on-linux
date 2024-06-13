@@ -95,11 +95,7 @@ AMD ROCm™ Software supports the following Linux distributions.
     "SLES 15 SP4", "5.14.21-150500", "✅"
     "Oracle Linux 8.9", "5.15.0-205.149.5.1.el8uek.x86_64", "✅ :sup:`3`"
     
-:sup:`3` Ubuntu 22.04.4 (kernel: 5.15 [GA]) is only supported on AMD Instinct MI300X and MI300A.
-
-:sup:`4` Ubuntu 22.04.4 (kernel: 6.5 [HWE]) and Oracle Linux 8.9 are only supported on AMD Instinct MI300X.
-
-:sup:`5` UnbtRHEL 9.3, RHEL 8.9, and SLES 15 SP5 are only supported on AMD Instinct MI300A.
+:sup:`3` Oracle Linux 8.9 is only supported on AMD Instinct MI300X.
 
 Virtualization support
 =============================================
