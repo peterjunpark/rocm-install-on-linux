@@ -86,6 +86,6 @@ For more in-depth installation instructions, refer to :ref:`rocm-install-overvie
 
 .. note::
 
-    To apply all settings, reboot your system.
+   To apply all settings, reboot your system.
 
 After completing the installation, review the :doc:`../how-to/native-install/post-install`. If you have issues with your installation, see :doc:`Troubleshooting <../how-to/native-install/install-faq>`.
