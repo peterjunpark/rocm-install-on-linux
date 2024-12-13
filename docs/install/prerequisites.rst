@@ -209,6 +209,7 @@ To install for the currently active kernel run the command corresponding to your
         .. code-block:: shell
 
             sudo apt install "linux-headers-$(uname -r)" "linux-modules-extra-$(uname -r)"
+            sudo apt install python3-setuptools python3-wheel
 
     .. tab-item:: Red Hat Enterprise Linux
         :sync: rhel-tab
@@ -228,6 +229,7 @@ To install for the currently active kernel run the command corresponding to your
                         {% else %}
                         sudo dnf install "kernel-headers-$(uname -r)" "kernel-devel-$(uname -r)"
                         {% endif %}
+                        sudo dnf install python3-setuptools python3-wheel
 
               {% endfor %}
 
@@ -237,6 +239,7 @@ To install for the currently active kernel run the command corresponding to your
         .. code-block:: shell
 
             sudo dnf install "kernel-uek-devel-$(uname -r)"
+            sudo dnf install python3-setuptools python3-wheel
 
     .. tab-item:: SUSE Linux Enterprise Server
         :sync: sle-tab
@@ -244,6 +247,7 @@ To install for the currently active kernel run the command corresponding to your
         .. code-block:: shell
 
             sudo zypper install kernel-default-devel
+            sudo zypper install python3-setuptools python3-wheel
 
 .. _group_permissions:
 
