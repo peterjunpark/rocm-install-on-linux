@@ -20,12 +20,14 @@ IRQs
 MACVTAP
 MSRs
 OL
+Packageless
 pci
 PLX
 preconfigured
 Repo
 rocHPL
 ROCmVersion
+Runfile
 SBR
 SMCi
 SVM
