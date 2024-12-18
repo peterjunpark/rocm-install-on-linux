@@ -183,6 +183,7 @@ instructions specific to your distribution to add the necessary repositories.
                         sudo SUSEConnect -p sle-module-desktop-applications/{{ os_version }}/x86_64
                         sudo SUSEConnect -p sle-module-development-tools/{{ os_version }}/x86_64
                         sudo SUSEConnect -p PackageHub/{{ os_version }}/x86_64
+                        sudo zypper install zypper
                         sudo zypper addrepo https://download.opensuse.org/repositories/devel:/languages:/perl/{{ os_version }}/devel:languages:perl.repo
                         sudo zypper addrepo https://download.opensuse.org/repositories/Education/{{ os_version }}/Education.repo
                         sudo zypper addrepo https://download.opensuse.org/repositories/science/SLE_15_SP5/science.repo # Once SLE_15_SP6 is created, change the static folder "SLE_15_SP5" to dynamic
@@ -318,7 +319,7 @@ Grant GPU access to all users on the system
       sudo udevadm control --reload-rules && sudo udevadm trigger
 
 This configuration grants all users read and write access to AMD GPU resources, 
-including the AMD Kernel Fusion Driver (KFD) and Direct Rendering Manager (DRM) devices.
+including the AMD Kernel-mode GPU Driver (KMD) and Direct Rendering Manager (DRM) devices.
 
 Grant GPU access to a custom group
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -352,7 +353,7 @@ Grant GPU access to a custom group
       sudo udevadm control --reload-rules && sudo udevadm trigger
 
 This configuration grants all users in the ``devteam`` group read and write access to AMD GPU resources, 
-including the Kernel Fusion Driver (KFD) and Direct Rendering Manager (DRM) devices.
+including the AMD Kernel-mode GPU Driver (KMD) and Direct Rendering Manager (DRM) devices.
 
 Disable integrated graphics (IGP), if applicable
 ================================================================
