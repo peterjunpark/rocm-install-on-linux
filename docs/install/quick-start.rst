@@ -137,7 +137,7 @@ For more in-depth installation instructions, refer to :ref:`detailed-install-ove
                        sudo zypper install zypper
                        sudo zypper addrepo https://download.opensuse.org/repositories/devel:languages:perl/{{ os_version}}/devel:languages:perl.repo
                        sudo zypper addrepo https://download.opensuse.org/repositories/Education/{{ os_version }}/Education.repo
-                       sudo zypper addrepo https://download.opensuse.org/repositories/science/SLE_15_SP5/science.repo  # Once SLE_15_SP6 is created, change the static folder "SLE_15_SP5" to dynamic
+                       sudo zypper addrepo https://download.opensuse.org/repositories/science/SLE_15_SP5/science.repo
                        sudo zypper --gpg-auto-import-keys refresh
                        sudo zypper install kernel-default-devel
                        sudo zypper install python3-setuptools python3-wheel

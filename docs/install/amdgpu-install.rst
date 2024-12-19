@@ -42,6 +42,7 @@ Ubuntu
                 sudo apt update
                 wget https://repo.radeon.com/amdgpu-install/|amdgpu_version|/ubuntu/{{ os_release }}/amdgpu-install_|amdgpu_install_version|_all.deb
                 sudo apt install ./amdgpu-install_|amdgpu_install_version|_all.deb
+                sudo apt update
         {% endfor %}
 
 Debian
@@ -60,6 +61,7 @@ Debian
                 sudo apt update
                 wget https://repo.radeon.com/amdgpu-install/|amdgpu_version|/ubuntu/{{ os_release }}/amdgpu-install_|amdgpu_install_version|_all.deb
                 sudo apt install ./amdgpu-install_|amdgpu_install_version|_all.deb
+                sudo apt update
         {% endfor %}
 
 Red Hat Enterprise Linux

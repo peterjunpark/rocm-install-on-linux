@@ -51,7 +51,7 @@ Before installing ROCm, complete the following prerequisites.
 Register your Enterprise Linux
 ==========================================================
 
-If you're using Red Hat Enterprise Linux (RHEL), Oracle Linux (OL) or SUSE Linux Enterprise Server (SLES), register
+If you're using Red Hat Enterprise Linux (RHEL) or SUSE Linux Enterprise Server (SLES), register
 your operating system to ensure you're able to download and install packages.
 
 .. tab-set::
@@ -196,7 +196,7 @@ instructions specific to your distribution to add the necessary repositories.
                         sudo zypper install zypper
                         sudo zypper addrepo https://download.opensuse.org/repositories/devel:/languages:/perl/{{ os_version }}/devel:languages:perl.repo
                         sudo zypper addrepo https://download.opensuse.org/repositories/Education/{{ os_version }}/Education.repo
-                        sudo zypper addrepo https://download.opensuse.org/repositories/science/SLE_15_SP5/science.repo # Once SLE_15_SP6 is created, change the static folder "SLE_15_SP5" to dynamic
+                        sudo zypper addrepo https://download.opensuse.org/repositories/science/SLE_15_SP5/science.repo
 
                 {% endfor %}
 
