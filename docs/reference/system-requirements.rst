@@ -99,6 +99,7 @@ AMD ROCm software supports the following Linux distributions.
     "SLES 15 SP6", "6.4.0", "✅"
     "SLES 15 SP5", "5.14.21", "✅"
     "Oracle Linux 8.10", "5.15.0", "✅ [#oracle810]_"
+    "Debian 12", "6.1", "✅ [#debian12]_"
 
 .. note::
 
@@ -126,3 +127,4 @@ ROCm requires CPUs that support PCIe™ atomics. Modern CPUs after the release o
 .. rubric:: Footnotes
 
 .. [#oracle810] Oracle Linux 8.10 is supported only on AMD Instinct MI300X.
+.. [#debian12] Debian 12 is supported only on AMD Instinct accelerators.

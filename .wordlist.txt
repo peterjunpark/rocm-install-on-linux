@@ -3,6 +3,7 @@ BARs
 br
 Broadcom
 CTest
+debian
 denylist
 DHCP
 dkms
