@@ -29,6 +29,7 @@ Accelerators and GPUs listed in the following table support compute workloads (n
       :widths: 50, 25, 25, 10
       :header: "Accelerator", "Architecture", "LLVM target", "Support"
 
+      "AMD Instinct MI325X", "CDNA3", "gfx942", "✅"
       "AMD Instinct MI300X", "CDNA3", "gfx942", "✅"
       "AMD Instinct MI300A", "CDNA3", "gfx942", "✅"
       "AMD Instinct MI250X", "CDNA2", "gfx90a", "✅"
