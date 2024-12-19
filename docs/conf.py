@@ -85,3 +85,5 @@ html_context = {
     "ol_release_version_numbers" : ol_release_version_numbers,
     "ol_version_numbers" : ol_version_numbers
 }
+
+footnote_backlinks = False

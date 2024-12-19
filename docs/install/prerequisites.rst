@@ -207,10 +207,24 @@ To install for the currently active kernel run the command corresponding to your
     .. tab-item:: Ubuntu
         :sync: ubuntu-tab
 
-        .. code-block:: shell
+        .. datatemplate:nodata::
 
-            sudo apt install "linux-headers-$(uname -r)" "linux-modules-extra-$(uname -r)"
-            sudo apt install python3-setuptools python3-wheel
+            .. tab-set::
+
+              {% for (os_version, os_release) in config.html_context['ubuntu_version_numbers']  %}
+
+                  .. tab-item:: Ubuntu {{ os_version }}
+
+                    .. code-block:: shell
+                        
+                        sudo apt install "linux-headers-$(uname -r)" "linux-modules-extra-$(uname -r)"
+                        {% if os_version == '24.04' -%}
+                        sudo apt install python3-setuptools python3-wheel libpython3.12
+                        {%- else -%}
+                        sudo apt install python3-setuptools python3-wheel libpython3.10
+                        {%- endif %}
+
+              {% endfor %}
 
     .. tab-item:: Red Hat Enterprise Linux
         :sync: rhel-tab
@@ -225,11 +239,11 @@ To install for the currently active kernel run the command corresponding to your
 
                     .. code-block:: shell
 
-                        {% if os_release == '9' %}
+                        {% if os_release == '9' -%}
                         sudo dnf install "kernel-headers-$(uname -r)" "kernel-devel-$(uname -r)" "kernel-devel-matched-$(uname -r)"
-                        {% else %}
+                        {%- else -%}
                         sudo dnf install "kernel-headers-$(uname -r)" "kernel-devel-$(uname -r)"
-                        {% endif %}
+                        {%- endif %}
                         sudo dnf install python3-setuptools python3-wheel
 
               {% endfor %}
