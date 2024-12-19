@@ -61,6 +61,11 @@ your operating system to ensure you're able to download and install packages.
 
         There is no registration required for Ubuntu.
 
+  .. tab-item:: Debian
+        :sync: debian-tab
+
+        There is no registration required for Debian.
+
   .. tab-item:: Red Hat Enterprise Linux
         :sync: rhel-tab
 
@@ -105,6 +110,11 @@ instructions specific to your distribution to add the necessary repositories.
         :sync: ubuntu-tab
 
         All ROCm installation packages are available in the default Ubuntu repositories.
+
+    .. tab-item:: Debian
+        :sync: debian-tab
+
+        All ROCm installation packages are available in the default Debian repositories.
 
     .. tab-item:: Red Hat Enterprise Linux
         :sync: rhel-tab
@@ -225,6 +235,14 @@ To install for the currently active kernel run the command corresponding to your
                         {%- endif %}
 
               {% endfor %}
+
+    .. tab-item:: Debian
+        :sync: debian-tab
+
+        .. code-block:: shell
+
+            sudo apt install "linux-headers-$(uname -r)"
+            sudo apt install python3-setuptools python3-wheel libpython3.10
 
     .. tab-item:: Red Hat Enterprise Linux
         :sync: rhel-tab

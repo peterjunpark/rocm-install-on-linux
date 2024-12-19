@@ -23,6 +23,8 @@ subtrees:
               - entries:
                 - file: install/native-install/ubuntu
                   title: Ubuntu
+                - file: install/native-install/debian
+                  title: Debian
                 - file: install/native-install/rhel
                   title: RHEL
                 - file: install/native-install/ol

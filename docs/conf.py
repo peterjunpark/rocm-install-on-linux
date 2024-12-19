@@ -34,6 +34,7 @@ all_article_info_author = ""
 
 # Supported linux version numbers
 ubuntu_version_numbers = [('24.04', 'noble'), ('22.04', 'jammy')]
+debian_version_numbers = [('12', 'jammy')]
 rhel_release_version_numbers = ['9', '8']
 rhel_version_numbers = ['9.5', '9.4', '8.10']
 sles_version_numbers = ['15.6', '15.5']
@@ -45,6 +46,7 @@ exclude_patterns = [
     'install/native-install/includes/rhel-multi-install.rst',
     'install/native-install/includes/sles-multi-install.rst',
     'install/native-install/includes/ubuntu-multi-install.rst'
+    'install/native-install/includes/debian-multi-install.rst'
     'install/native-install/includes/ol-multi-install.rst'
 ]
 
@@ -79,6 +81,7 @@ html_theme_options = {
 
 html_context = {
     "ubuntu_version_numbers" : ubuntu_version_numbers,
+    "debian_version_numbers" : debian_version_numbers,
     "sles_version_numbers" : sles_version_numbers,
     "rhel_release_version_numbers" : rhel_release_version_numbers,
     "rhel_version_numbers" : rhel_version_numbers,

@@ -45,6 +45,26 @@ For more in-depth installation instructions, refer to :ref:`detailed-install-ove
                        sudo apt update
                        sudo apt install amdgpu-dkms rocm
                 {% endfor %}
+        
+        .. tab-item:: Debian
+
+            .. tab-set::
+
+                {% for (os_version, os_release) in config.html_context['debian_version_numbers'] %}
+                .. tab-item:: {{ os_version }}
+
+                   .. code-block:: bash
+                       :substitutions:
+
+                       sudo apt update
+                       sudo apt install "linux-headers-$(uname -r)"
+                       sudo apt install python3-setuptools python3-wheel libpython3.10
+                       sudo usermod -a -G render,video $LOGNAME # Add the current user to the render and video groups
+                       wget https://repo.radeon.com/amdgpu-install/|amdgpu_version|/ubuntu/{{ os_release }}/amdgpu-install_|amdgpu_install_version|_all.deb
+                       sudo apt install ./amdgpu-install_|amdgpu_install_version|_all.deb
+                       sudo apt update
+                       sudo apt install amdgpu-dkms rocm
+                {% endfor %}
 
         .. tab-item:: Red Hat Enterprise Linux
 
