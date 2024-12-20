@@ -220,3 +220,54 @@ Expected output:
 .. code-block::
 
    [0 1 2 3 4]
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+
+4. Build ROCm JAX from Source
+------------------------------
+
+Follow these steps to build JAX with ROCm support from source:
+
+Step 1: Clone the Repository
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Clone the ROCm-specific fork of JAX for the desired branch:
+
+.. code-block:: bash
+
+   git clone https://github.com/ROCm/jax -b <branch_name>
+   cd jax
+
+Step 2: Build the Wheels
+~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Run the following command to build the necessary wheels:
+
+.. code-block:: bash
+
+   python3 ./build/build.py build --wheels=jaxlib,jax-rocm-plugin,jax-rocm-pjrt \
+       --rocm_version=60 --rocm_path=/opt/rocm-[version]
+
+This will generate three wheels in the ``dist/`` directory:
+
+- ``jaxlib`` (generic, device agnostic library)
+- ``jax-rocm-plugin`` (ROCm-specific plugin)
+- ``jax-rocm-pjrt`` (ROCm-specific runtime)
+
+Step 3: Install Custom JAX
+~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+Install the custom wheels:
+
+.. code-block:: bash
+
+   python3 setup.py develop --user && pip3 -m pip install dist/*.whl
+
+Simplified Build Script
+~~~~~~~~~~~~~~~~~~~~~~~
+
+For a streamlined process, consider using the ``jax/build/rocm/dev_build_rocm.py`` script.
+=======
+>>>>>>> external/develop
+>>>>>>> internal/develop
